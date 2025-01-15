@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        //captura valores para as variáveis valor1 e valor2
+        let valor1 = prompt("Digite o valor1")
+        let valor2 = prompt("Digite o valor2")
+
+        //converte os valores das variáveis valor1 e valor2 para o tipo número e substitui as vírgulas por pontos
+        let valor1Num = Number(valor1.replace(",","."))
+        let valor2Num = Number(valor2.replace(",","."))
+
+        //soma as variáveis valor1Num e valor2Num
+        let soma = valor1Num + valor2Num
+
+        //converte o resultado em texto
+        let somaStr = String(soma) 
+        //substitui os pontos do resultado por vírgula
+        somaStr = somaStr.replace(".",",")
+        //exibe o resultado em uma caixa do tipo alert
+        window.alert(`O resultado da soma é ${somaStr}`)
+
+
+    </script>
+</body>
+</html>

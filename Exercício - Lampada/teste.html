@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Lâmpada</title>
+    <style>
+        body{
+
+            text-align: center;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+
+        img{
+            width: 244px;
+            cursor: pointer;
+        }
+        div{
+            border: solid 3px gray;
+            border-radius: 15px;
+            padding: 20px;
+            width: 150px;
+            
+        }
+
+        button{
+            background-color: black;
+            color: white;
+            width: 150px;
+            height: 40px;
+            margin: 5px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+<img src="imagens/lampada-off.png" alt="Lâmpada Desligada" id="lampada" onclick="quebrada()">
+<div>
+    <button onclick="acender()">Acender</button>
+    <button onclick="apagar()">Apagar</button>
+</div>
+
+<script>
+    function acender(){
+        lampada.setAttribute("src","imagens/lampada-on.png")
+    }
+    function apagar(){
+        lampada.setAttribute("src","imagens/lampada-off.png")
+    }
+    function quebrada(){
+        lampada.setAttribute("src","imagens/lampada-quebrada.png")
+    }
+
+
+</script>
+</body>
+</html>

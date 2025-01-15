@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        fieldset{
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="pessoa" id="nome"><br><br>
+
+            <label for="peso">Peso:</label><br>
+            <input type="text" name="kilo" id="peso"><br><br>
+
+            <label for="altura">Altura:</label><br>
+            <input type="text" name="tamanho" id="altura"><br><br>
+            
+            <input type="button" onclick="imc()" value="Calcular IMC">
+            <br>
+            <h4 id="resposta"></h4>
+        </fieldset>
+    </form>
+
+
+
+
+    <script src="35-exercicio-imc.js"></script>
+</body>
+
+</html>

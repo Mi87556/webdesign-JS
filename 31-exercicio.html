@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+
+<body>
+    <p id="situacaoCompra"></p>
+    <p id="situacaoCupom"></p>
+    <p id="resposta"></p>
+
+    <script>
+        let valor = Number(prompt("Qual foi o valor da sua compra?"))
+        let cupom = prompt("Possui algum cupom da loja?")
+        let valorCdesconto = valor - 100
+
+        situacaoCompra.innerText = `O valor da sua compra foi de:${valor}`
+        situacaoCupom.innerText = `Possui cupom: ${cupom}`
+
+        if (valor > 1000 && cupom == "sim"){
+            resposta.innerText = `O valor da sua compra com o desconto foi de: ${valorCdesconto}`
+        }
+        else {
+            resposta.innerText = `O valor da sua compra foi de: ${valor} `
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #dark, #light {
+            border: 2px solid black;
+            border-radius: 40px;
+            text-align: center;
+            padding: 3px;
+            width: 60px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            font-size: 10px;
+
+        }
+        .oneP {
+            float: right;
+            display: flex;
+
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="oneP">
+        <div id="dark" onclick="modoEscuro()">MODO ESCURO</div>
+        <div id="light" onclick="modoClaro()">MODO CLARO</div>
+
+    </div>
+    <script>
+        //Captura o body, e as divs: dark e light
+        let corpo = document.getElementsByTagName("body")[0]
+        let escuro = document.getElementById("dark")
+        let claro = document.getElementById("light")
+
+        //Função que deixa o fundo escuro e os botões claros
+        function modoEscuro() {
+            corpo.style.background = "black"
+            escuro.style.background = "white"
+            claro.style.background = "white"
+            escuro.style.color = "black"
+            claro.style.color = "black"
+
+        }
+        //Função que deixa o fundo claro e os botões escuros
+        function modoClaro() {
+            corpo.style.background = "white"
+            escuro.style.background = "black"
+            claro.style.background = "black"
+            escuro.style.color = "white"
+            claro.style.color = "white"
+
+        }
+
+    </script>
+
+</body>
+
+</html>
