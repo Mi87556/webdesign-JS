@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolher Tema</title>
+
+    <style>
+        .fundo1{
+            background-color: white;
+        }
+        .fundo2{
+            background-color: blue;
+        }
+        .fundo3{
+            background-color: yellow;  
+             
+        }
+        .fundo4{
+            background-color: red;
+        }
+        div{
+            width: 80px;
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid black;
+            background-color: white;
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+
+<body class="fundo1" id="corpo">
+    <div onclick="temaAmarelo()" class="divclass">Amarelo</div>
+    <div onclick="temaAzul()">Azul</div>
+    <div onclick="temaVermelho()">Vermelho</div>
+
+
+<script>
+    function temaAmarelo(){
+        corpo.setAttribute("class","fundo3")
+    }
+    function temaAzul(){
+        corpo.setAttribute("class","fundo2")
+    }
+    function temaVermelho(){
+        corpo.setAttribute("class","fundo4")
+    }
+
+</script>
+</body>
+
+</html>

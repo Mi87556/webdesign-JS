@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos entre campos de formulários</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="valor1">Valor 1:</label>
+        <input type="number" id="valor1">
+        <br><br>
+        <label for="valor2">Valor 2:</label>
+        <input type="number" id="valor2"><br><br>
+        <input type="button" value="Calcular" onclick="somar()">
+
+    </form>
+
+
+    <script>
+        //number para identificar como número e calcular
+        //->.value pegar o valor DENTRO do campo input
+        function somar() {
+            let campoUm = Number(document.getElementById("valor1").value)
+            let campoDois = Number(document.getElementById("valor2").value)
+            let soma = campoUm + campoDois
+            alert(`O resultado da soma é: ${soma}`)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e Eventos</title>
+    <style>
+        #teste {
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="teste" onclick="alteraCor()" onmouseout="alteraTexto()" onmousemove="voltarTexto()">SENAI BARUERI</div>
+
+
+    <script>
+        //Captura o elemento div de id = "teste"
+        let caixa = window.document.getElementById("teste")
+
+        function alteraCor() {
+            //Altera a cor do elemento capturado ao clicar
+            caixa.style.background = "green"
+        }
+        //Altera o texto do elemento capturado ao sair com o mouse de cima da div
+        function alteraTexto() {
+            caixa.innerText = "WEBDESIGN - FRONTEND"
+        }
+        function voltarTexto() {
+            caixa.innerText = "SENAI BARUERI"
+        }
+
+    </script>
+</body>
+
+</html>

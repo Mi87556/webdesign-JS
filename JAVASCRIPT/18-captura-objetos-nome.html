@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturando Objetos por nomes</title>
+</head>
+<body>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nomeAluno" id="nome">
+
+
+    <script>
+        let teste = window.document.getElementsByName('nomeAluno')[0]
+        teste.style.background = "yellow"
+        teste.style.color = "red"
+    </script>
+</body>
+</html>
